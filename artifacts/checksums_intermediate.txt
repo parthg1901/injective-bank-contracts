@@ -1,0 +1,1 @@
+fd1cd5b0ade29e079e6a727ebef8658df97806311857f5503c8d824f89d9eb9e  target/wasm32-unknown-unknown/release/injective_bank.wasm

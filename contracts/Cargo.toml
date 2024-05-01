@@ -1,0 +1,23 @@
+[package]
+name = "injective-bank"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+backtraces = ["cosmwasm-std/backtraces"]
+# use library feature to disable all instantiate/execute/query exports
+library = []
+
+[dependencies]
+cosmwasm-std = "1.1.5"
+cw721-base = { version = "0.16.0", features = ["library"]}
+cw-storage-plus = "^1.1"
+cw-utils = "^1.0"
+cosmwasm-schema = "^1.2"
+cw2 = "^1.1"
+num-traits = "0.2.18"
+rust_decimal = {version = "1.35.0", features = ["maths"]}
+thiserror = "1.0.58"
